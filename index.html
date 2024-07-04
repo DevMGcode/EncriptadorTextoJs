@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylestablet.css">
+  <link rel="stylesheet" href="css/stylesmovil.css">
+  <title>Ubicar Logo</title>
+</head>
+<body>
+  <h1 class="titulo">Encriptador de texto</h1>
+  <div class="logo-container">
+    <img src="assets/Logo.png" alt="logo">
+  </div>
+
+  <section class="mi-seccion">
+    <br><br>
+    <input type="text" class="texto1" placeholder="Ingrese el texto aqui">
+  </section>
+
+  <section class="lateral">
+    <div class="texto-lateral">
+      <img src="assets/Muñeco.png" alt="nose encontro">
+      <h3>Ningún mensaje fue encontrado</h3>
+      <p>Ingresa el texto que desees encriptar o desencriptar</p>
+      <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+    </div>
+    <button class="boton-copiar">Copiar</button>
+  </section>
+
+  <div class="botones-container">
+    <p class="mensaje-encriptar"><img src="assets/alerta.png" alt="Icono de alerta"> Solo letras minúsculas y sin acentos</p>
+    <div class="botones">
+      <button class="boton-encriptar">Encriptar</button>
+      <button class="boton-desencriptar">Desencriptar</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</body>
+</html>

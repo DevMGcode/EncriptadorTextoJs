@@ -1,0 +1,73 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para tablet (768px de ancho) */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-y: auto; 
+    height: auto; 
+  }
+
+  .logo-container {
+
+    margin-left: -6%;
+  }
+
+  /* Sección lateral se coloca abajo */
+  .lateral {
+    position: static;
+    width: 80%; 
+    height: 344px; 
+    margin-top: 110%; 
+    margin-bottom: 10%;
+  }
+  .lateral img{
+    display: none;
+  }
+
+  .boton-copiar{
+    margin-bottom: 5%;
+    width: 90%;
+    margin-left: 2%;
+  }
+
+  
+
+  /* Ajusta el contenedor de los botones */
+  .botones-container {
+    width: 100%; 
+    margin-top: 96.2px;  
+    display: flex;
+    margin-left: -20rem;
+    
+    
+  }
+  
+  .botones{    
+    width: 76.5%;
+    margin-left: 25.7%;    
+  }
+
+  
+  /* Ajusta la sección principal */
+  .mi-seccion {
+    width: 50%;     
+    top: -12%; 
+    display: flex;
+    align-items: flex-start;
+    margin-left: -25%;
+    
+  }
+
+  .mensaje-encriptar {
+    margin-left: 50%;
+  }
+}

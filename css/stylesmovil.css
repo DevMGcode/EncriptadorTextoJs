@@ -1,0 +1,79 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-y: auto; 
+    height: auto; 
+
+ 
+  .titulo{
+    font-size: 2rem !important;
+  }
+
+  .logo-container {   
+    margin-left: -20%;
+  }
+
+  /* Sección lateral se coloca abajo */
+  .lateral {
+    position: static; 
+    width: 80%;
+    height: 334px; 
+    margin-top: 200%; 
+    margin-bottom: 20px;
+  }
+
+  .lateral img {
+    display: none;
+  }
+
+  .texto-lateral .parrafo{
+    margin-left: 14%;
+    width: 74%;
+    font-size: 18px;
+  }
+
+  .boton-copiar {
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 0;
+}
+  
+  
+  /* Ajusta el contenedor de los botones */
+  .botones-container {
+    width: 100%; 
+    margin-top: 10px; 
+    display: flex;
+    align-items: center; 
+    margin-left: -15rem;
+    margin-top: 16%;
+  }
+
+  .mi-seccion .texto1{
+    font-size: 20px;
+  }
+
+  .mi-seccion{
+    width: 80%;
+    top: -7.1%;
+    margin-left: 4.7%;
+  }
+  
+  
+  }
+}
+
+  
+
+
+ 
+

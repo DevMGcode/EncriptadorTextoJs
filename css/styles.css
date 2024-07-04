@@ -1,0 +1,281 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Variables CSS */
+:root {
+  --color-fondo: #F3F5FC;
+  --fuente-principal: 'Inter'; 
+  --color-section: #0A3871;
+  --color-titulo: #1d0783;
+  --color-titulo-lateral: #343A40;
+  --color-debajo-titulo-lateral: #495057;
+}
+
+/* Estilos generales del cuerpo (body) */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-image: url('../assets/light-blue-green-backdrop-with-circular-arc-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Estilos del título h1 */
+h1 {
+  color: var(--color-titulo);
+  text-align: center;
+  position: absolute; 
+  top: 0; 
+  left: 12%; 
+  margin: 80px; 
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: "Playwrite NG Modern", cursive;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1d0783, 0 0 40px #1d0783, 0 0 70px #1d0783, 0 0 80px #1d0783, 0 0 100px #1d0783, 0 0 150px #1d0783;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+h1:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1d0783, 0 0 20px #1d0783, 0 0 35px #1d0783, 0 0 40px #1d0783, 0 0 50px #1d0783, 0 0 75px #1d0783;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  position: absolute; 
+  top: 40px; 
+  left: 40px; 
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos de la imagen del logo */
+.logo-container img {
+  width: 120px; 
+  height: 48px; 
+}
+
+/* Sección principal */
+.mi-seccion {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  margin-left: -20%;
+  position: absolute;
+  width: 680px; 
+  height: 288px; 
+  margin-top: 268px; 
+  background-color: transparent; 
+  padding: 20px;
+  font-family: 'Inter', sans-serif; 
+  font-size: 32px; 
+  line-height: 48px; 
+  font-weight: 400; 
+  color: var(--color-section); 
+  border: 0.1px solid #cccccc1f; 
+  margin-left: -35%;
+}
+
+
+/* Ajustes para textarea.texto1 */
+.mi-seccion .texto1 {
+  width: 100%; 
+  height: 100%; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  border: none; 
+  background-color: transparent; 
+  color: var(--color-section); 
+  padding: 0;
+  outline: none;   
+  
+}
+
+.texto1:focus {
+  outline: none; 
+}
+
+.texto1::placeholder {
+  color: var(--color-section); 
+}
+
+/* Lateral derecho */
+.lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 400px; 
+  height: 944px; 
+  top: 40px; 
+  left: 1000px; 
+  background-color: #FFFFFF; 
+  border-radius: 32px; 
+  opacity: 0.7; 
+  box-sizing: border-box; 
+}
+
+/* Contenedor de texto en el lateral */
+.texto-lateral {
+  width: 336px;
+  height: 781px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box; 
+  overflow: hidden; 
+}
+
+.texto-lateral img {
+  width: 100%;
+  height: auto;
+  margin-top: 60%;
+  margin-bottom: 16px;
+}
+
+.texto-lateral h3 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  color: var(--color-titulo-lateral);
+  margin: 0;
+}
+
+.texto-lateral p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; /* 16px */
+  line-height: 1.5;
+  color: var(--color-debajo-titulo-lateral);
+  text-align: center;
+  margin: 0;
+}
+
+.texto-lateral .parrafo {
+  font-family: 'Inter', sans-serif; 
+  font-weight: 400; 
+  font-size: 24px; 
+  line-height: 36px; 
+  color: var(--color-section); 
+  margin: 0; 
+  display: none;  
+}
+
+/* Botón de copiar */
+.boton-copiar {
+  width: 336px; 
+  height: 67px; 
+  border-radius: 24px; 
+  border: 1px solid var(--color-section); 
+  background-color: var(--color-light-blue); 
+  color: var(--color-section); 
+  font-size: 16px;
+  font-weight: bold; 
+  padding: 24px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  margin-left: 5%;
+  margin-top: -7%;
+}
+
+/* Estilos de hover para el botón de copiar */
+.boton-copiar:hover {
+  background-color: var(--color-section); 
+  color: var(--color-fondo); 
+}
+
+/* Contenedor de botones */
+.botones-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 700px; 
+  height: 150px; 
+  top: 480px;
+  left: 200px; 
+  background-color: #ffffff00; 
+  border-radius: 32px; 
+  box-sizing: border-box; 
+  margin-top: 20rem;
+ margin-left: -20rem;
+}
+
+/* Estilos de mensaje de encriptar */
+.mensaje-encriptar {
+  width: 100%; 
+  display: flex; 
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; 
+  color: var(--color-section); 
+  padding: 10px; 
+  box-sizing: border-box; 
+  margin-top: 20px; 
+  margin-left: 70%;
+}
+
+.mensaje-encriptar img {
+  margin-right: 8px; 
+}
+
+.botones {
+  
+  display: flex;
+  padding: 10px;
+  width: 90%;    
+  gap: 10px; 
+  justify-content: center; 
+  align-items: center;
+  margin-left: 58.6%;
+}
+
+.boton-encriptar, .boton-desencriptar {
+  width: 48%;
+  height: 67px;
+  border-radius: 24px;
+  border: 1px solid var(--color-section);
+  background-color: var(--color-light-blue);
+  color: var(--color-section);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover {
+  background-color: var(--color-section);
+  color: var(--color-fondo);
+}
+
+
+
+
+.mensaje-encriptar.alerta {
+  color: rgb(0, 4, 255);
+  font-weight: 800;
+  font-size: 20px;
+}
